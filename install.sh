@@ -31,7 +31,7 @@ curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.con
 _CUSTOM="$HOME/.config/nvim/custom"
 
 confs=(
-    "basic"
+    "color"
     "utils"
     "commands"
     "plugconf_coc"
