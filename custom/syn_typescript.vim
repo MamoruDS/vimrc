@@ -21,6 +21,8 @@ exe 'hi typescriptNull ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
 exe 'hi typescriptGlobal ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
 " return
 exe 'hi typescriptStatementKeyword ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
+" new
+exe 'hi typescriptOperator ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR . ' cterm=bold'
 
 " ## prop / methods / label
 exe 'hi typescriptBOMLocationMethod ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL
@@ -28,6 +30,8 @@ exe 'hi typescriptBOMLocationMethod ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL
 " exe 'hi typescriptObjectType ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
 exe 'hi typescriptObjectColon ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
 exe 'hi typescriptObjectLabel ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR
+exe 'hi typescriptDOMFormProp ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
+exe 'hi typescriptBOMWindowProp ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
 
 " ## Node
 exe 'hi typescriptNodeGlobal ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
