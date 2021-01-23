@@ -4,11 +4,12 @@
 # pacman -Sy && pacman -S --noconfirm curl git nodejs-lts-fermium icu yarn
 
 # install neovim
-# curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage && chmod u+x nvim.appimage && ./nvim.appimage
+if ! [ -x "$(command -v nvim)" ]; then
+  echo 'Error: nvim is not installed' >&2
+fi
 
 # install MamoruDS/vimrc
 # curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | bash
-
 
 _PLUG="${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim"
 _VIM=nvim
@@ -30,20 +31,7 @@ curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.con
 
 _CUSTOM="$HOME/.config/nvim/custom"
 
-confs=(
-    "color"
-    "cmds"
-    "plugconf_coc"
-    "plugconf_gitgutter"
-    "plugconf_nerdtree"
-    "syn_json"
-    "syn_typescript"
-    "syn_vim"
-)
-
-for conf in "${confs[@]}"; do
-    curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/custom/$conf.vim > $_CUSTOM/$conf.vim
-done
+sh update.sh
 
 # sh -c "$_VIM +PlugInstall +qall"
 sh -c "$_VIM -c 'PlugInstall | qall'"
