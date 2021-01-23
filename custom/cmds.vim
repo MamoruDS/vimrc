@@ -15,7 +15,7 @@ com! -nargs=0 Format :CocCommand prettier.formatFile
 " nerdtree
 function! ToggleNERDTree()
     :NERDTreeToggle
-    call ReloadColorNERDTreeGIT()
+    exe 'call ReloadColorNERDTreeGIT()'
 endfunction
 
 function! ReloadColorNERDTreeGIT()
