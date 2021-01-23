@@ -19,7 +19,7 @@ function! ToggleNERDTree()
 endfunction
 
 function! ReloadColorNERDTreeGIT()
-    exe 'source ~/.config/nvim/custom/syn_nerdtree.vim'
+    exe 'source ~/.config/nvim/custom/plugconf_nerdtree.vim'
 endfunction
 
 nnoremap <C-b> :call ToggleNERDTree()<CR>
