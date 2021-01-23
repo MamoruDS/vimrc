@@ -23,7 +23,7 @@ hi AllBold cterm=bold
 match AllBold /./
 
 exe 'hi EndOfBuffer ctermfg=' . g:cc_GY
-exe 'hi VertSplit ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cc__N
+exe 'hi VertSplit	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cc__N
 
 hi Pmenu		ctermbg=237		ctermfg=None
 " hi PmenuSel		ctermbg=214		ctermfg=233
@@ -35,7 +35,7 @@ exe 'hi SignColumn	ctermbg=' . g:cc__N
 if has("patch-8.1.1564")
   set signcolumn=number
 else
-  set signcolumn=yes
+  set signcolumn=auto
 endif
 
 set number
@@ -43,7 +43,7 @@ hi LineNr		ctermbg=None	ctermfg=240
 hi Normal		ctermbg=None
 hi ModeMsg		ctermbg=green	ctermfg=238
 hi MatchParen	ctermbg=05		ctermfg=231 
-hi CursorLine	ctermbg=None	ctermfg=None 
+hi CursorLine	ctermbg=233     ctermfg=None    cterm=None
 hi CursorLineNr	ctermbg=None	ctermfg=250
 
 exe 'hi Comment			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY
