@@ -32,8 +32,7 @@ _CUSTOM="$HOME/.config/nvim/custom"
 
 confs=(
     "color"
-    "utils"
-    "commands"
+    "cmds"
     "plugconf_coc"
     "plugconf_gitgutter"
     "plugconf_nerdtree"
