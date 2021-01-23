@@ -1,11 +1,15 @@
 #!/bin/sh
 
-# requirements for arch linux
-# pacman -Sy && pacman -S --noconfirm curl nodejs-lts-fermium icu yarn
-
-# install neovim
+# neovim check
 if ! [ -x "$(command -v nvim)" ]; then
-  echo 'Error: nvim is not installed' >&2
+    echo 'Error: nvim is not installed' >&2
+    exit 1
+fi
+
+# node check
+if ! [ -x "$(command -v node)" ]; then
+    echo 'Error: nodejs is not installed' >&2
+    exit 1
 fi
 
 # install MamoruDS/vimrc
@@ -31,7 +35,20 @@ curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.con
 
 _CUSTOM="$HOME/.config/nvim/custom"
 
-curl https://github.com/MamoruDS/vimrc/blob/main/update.sh | sh
+if [ -f 'update.sh' ]; then
+    if [ -x "$(command -v bash)" ]; then
+        bash update.sh
+    else
+        curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
+    fi
+else
+    if [ -x "$(command -v bash)" ]; then
+        curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
+    else
+        curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
+    fi
+fi
+
 
 # sh -c "$_VIM +PlugInstall +qall"
 sh -c "$_VIM -c 'PlugInstall | qall'"
