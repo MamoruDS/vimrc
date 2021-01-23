@@ -31,7 +31,7 @@ sh -c "curl -fLo $_PLUG --create-dirs \
 mkdir -p $HOME/.config/nvim/custom
 # mkdir -p $HOME/.vim/plug
 
-curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.config/nvim/init.vim
+curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.config/nvim/init.vim
 
 _CUSTOM="$HOME/.config/nvim/custom"
 
@@ -39,13 +39,13 @@ if [ -f 'update.sh' ]; then
     if [ -x "$(command -v bash)" ]; then
         bash update.sh
     else
-        curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
+        curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
     fi
 else
     if [ -x "$(command -v bash)" ]; then
-        curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
+        curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
     else
-        curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
+        curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
     fi
 fi
 

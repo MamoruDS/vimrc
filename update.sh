@@ -14,5 +14,5 @@ confs=(
 )
 
 for conf in "${confs[@]}"; do
-    curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/custom/$conf.vim > $_CUSTOM/$conf.vim
+    curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/custom/$conf.vim > $_CUSTOM/$conf.vim
 done
