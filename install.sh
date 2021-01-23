@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # requirements for arch linux
-# pacman -Sy && pacman -S --noconfirm curl git nodejs-lts-fermium icu yarn
+# pacman -Sy && pacman -S --noconfirm curl nodejs-lts-fermium icu yarn
 
 # install neovim
 if ! [ -x "$(command -v nvim)" ]; then
@@ -31,7 +31,7 @@ curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.con
 
 _CUSTOM="$HOME/.config/nvim/custom"
 
-sh update.sh
+curl https://github.com/MamoruDS/vimrc/blob/main/update.sh | sh
 
 # sh -c "$_VIM +PlugInstall +qall"
 sh -c "$_VIM -c 'PlugInstall | qall'"
