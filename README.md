@@ -8,6 +8,7 @@ yarn # or npm
 ## installation
 
 install nodejs and npm first
+
 ```shell
 curl -sL install-node.now.sh/lts | bash
 ```
@@ -36,13 +37,15 @@ install from command
 apt install curl git
 
 # install neovim
-curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/install_neovim.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install_neovim.sh | bash
+# with sudo
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install_neovim.sh | sudo -E bash -
 
 # fetch profile
-curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | sh
 
 # update profile
-curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | sh
 ```
 
 </details>
