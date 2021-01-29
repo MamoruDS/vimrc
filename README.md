@@ -11,6 +11,9 @@ install nodejs and npm first
 
 ```shell
 curl -sL install-node.now.sh/lts | bash
+
+# sudo alternative
+curl -sL install-node.now.sh/lts | sudo -E bash -
 ```
 
 <details><summary>Arch</summary>
@@ -21,10 +24,10 @@ install from command
 pacman -S --noconfirm curl git neovim icu yarn
 
 # fetch profile
-curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | sh
 
 # update profile
-curl https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | sh
 ```
 
 </details>
