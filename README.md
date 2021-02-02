@@ -27,7 +27,7 @@ pacman -S --noconfirm curl git neovim icu yarn
 curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | sh
 
 # update profile
-curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
 ```
 
 </details>
@@ -48,7 +48,7 @@ curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install_neovim.sh
 curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/install.sh | sh
 
 # update profile
-curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | sh
+curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
 ```
 
 </details>
