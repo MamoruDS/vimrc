@@ -19,6 +19,11 @@ let g:ccBWT=15  " bright white
 let g:cc_GY=241 " gray
 let g:cc_OR=209 " orange
 
+let g:csAAB='bold' " all bold
+let g:cs__N='None'
+
+let g:cs_GN=g:cs__N " default
+
 hi AllBold cterm=bold
 match AllBold /./
 
@@ -30,6 +35,8 @@ hi Pmenu		ctermbg=237		ctermfg=None
 hi PmenuSel		ctermbg=9		ctermfg=255
 " hi PmenuSbar    ctermbg=None    ctermfg=None
 " hi PmenuThumb   ctermbg=None    ctermfg=None
+
+hi Search	ctermfg=None	ctermbg=231	cterm=reverse,bold
 
 exe 'hi SignColumn	ctermbg=' . g:cc__N
 if has("patch-8.1.1564")
@@ -46,37 +53,37 @@ hi MatchParen	ctermbg=05		ctermfg=231
 hi CursorLine	ctermbg=233     ctermfg=None    cterm=None
 hi CursorLineNr	ctermbg=None	ctermfg=250
 
-exe 'hi Comment			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY
-exe 'hi Constant		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi String			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GN
-exe 'hi Character		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GN
-exe 'hi Number			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBRD
-exe 'hi Boolean			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR
-exe 'hi Float			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD
-exe 'hi Identifier		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
-exe 'hi Function		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL
-exe 'hi Statement		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_YL
-exe 'hi Conditional		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
-exe 'hi Repeat			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
-exe 'hi Label			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBCY
-exe 'hi Operator		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
-exe 'hi Keyword			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
-exe 'hi Exception		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD
-exe 'hi PreProc			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
-exe 'hi Include			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
-exe 'hi Macro			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi PreCondit		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Type			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL
-exe 'hi StorageClass	ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Structure		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD
-exe 'hi Typedef			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Special			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_
-exe 'hi SpecialChar		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Tag				ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Delimiter		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBCY
-exe 'hi SpecialComment	ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Debug			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Underlined		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT
-exe 'hi Ignore			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY
-exe 'hi Error			ctermbg=' . g:cc_RD . ' ctermfg=' . g:cc_WT
-exe 'hi Todo			ctermbg=' . g:cc_YL . ' ctermfg=' . g:cc_WT . ' cterm=bold'
+exe 'hi Comment			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cs_GN
+exe 'hi Constant		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR . ' cterm=' . g:cs_GN
+exe 'hi String			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GN . ' cterm=' . g:cs_GN
+exe 'hi Character		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GN . ' cterm=' . g:cs_GN
+exe 'hi Number			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBRD . ' cterm=' . g:cs_GN
+exe 'hi Boolean			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR . ' cterm=' . g:cs_GN
+exe 'hi Float			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:cs_GN
+exe 'hi Identifier		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
+exe 'hi Function		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL . ' cterm=' . g:cs_GN
+exe 'hi Statement		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_YL . ' cterm=' . g:cs_GN
+exe 'hi Conditional		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
+exe 'hi Repeat			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
+exe 'hi Label			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBCY . ' cterm=' . g:cs_GN
+exe 'hi Operator		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Keyword			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
+exe 'hi Exception		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:cs_GN
+exe 'hi PreProc			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Include			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
+exe 'hi Macro			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi PreCondit		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Type			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL . ' cterm=' . g:cs_GN
+exe 'hi StorageClass	ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Structure		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:cs_GN
+exe 'hi Typedef			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Special			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
+exe 'hi SpecialChar		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Tag				ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Delimiter		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBCY . ' cterm=' . g:cs_GN
+exe 'hi SpecialComment	ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Debug			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Underlined		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Ignore			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cs_GN
+exe 'hi Error			ctermbg=' . g:cc_RD . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi Todo			ctermbg=' . g:cc_YL . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
