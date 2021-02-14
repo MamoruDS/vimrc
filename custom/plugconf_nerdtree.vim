@@ -6,7 +6,6 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 let g:NERDTreeShowHidden = 1
 
 exe 'hi NERDTreeDir			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_BL . ' cterm=bold'
-exe 'hi Identifier			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY
 exe 'hi NERDTreeClosable	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
 exe 'hi NERDTreeOpenable	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY
 exe 'hi NERDTreeHelp		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY
