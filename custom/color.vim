@@ -28,7 +28,7 @@ hi AllBold cterm=bold
 match AllBold /./
 
 exe 'hi EndOfBuffer ctermfg=' . g:cc_GY
-exe 'hi VertSplit	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cc__N
+exe 'hi VertSplit	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cs__N
 
 hi Pmenu		ctermbg=237		ctermfg=None
 " hi PmenuSel		ctermbg=214		ctermfg=233
@@ -36,7 +36,7 @@ hi PmenuSel		ctermbg=9		ctermfg=255
 " hi PmenuSbar    ctermbg=None    ctermfg=None
 " hi PmenuThumb   ctermbg=None    ctermfg=None
 
-hi Search	ctermfg=None	ctermbg=231	cterm=reverse,bold
+exe 'hi Search ctermfg=' .g:cc_WT ' ctermbg=' .g:cc_RD ' cterm=' .g:cs__N
 
 exe 'hi SignColumn	ctermbg=' . g:cc__N
 if has("patch-8.1.1564")
