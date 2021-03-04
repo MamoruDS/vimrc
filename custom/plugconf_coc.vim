@@ -1,25 +1,3 @@
-" coc extensions
-" list of coc extensions: https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions
-let g:coc_global_extensions = [
-    \"coc-eslint",
-    \"coc-git",
-    \"coc-json",
-    \"coc-pairs",
-    \"coc-prettier",
-    \"coc-sh",
-    \"coc-tsserver",
-    \"coc-vimlsp",
-    \"coc-yaml",
-    \]
-
-" extensions for python
-call add(g:coc_global_extensions, "coc-pyright")
-" extensions for rust-lang
-" call add(g:coc_global_extensions, "coc-rust-analyzer")
-" extensions for web development
-" call add(g:coc_global_extensions, "coc-css")
-" call add(g:coc_global_extensions, "coc-html")
-
 " https://github.com/neoclide/coc.nvim#example-vim-configuration
 set hidden
 set nobackup
