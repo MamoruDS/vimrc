@@ -35,20 +35,11 @@ curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/init.vim > $HOME/.
 
 _CUSTOM="$HOME/.config/nvim/custom"
 
-if [ -f 'update.sh' ]; then
-    if [ -x "$(command -v bash)" ]; then
-        bash update.sh
-    else
-        curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
-    fi
+if [ -x "$(command -v bash)" ]; then
+    curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
 else
-    if [ -x "$(command -v bash)" ]; then
-        curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
-    else
-        curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
-    fi
+    curl -L https://raw.githubusercontent.com/MamoruDS/vimrc/main/_update.sh | sh
 fi
-
 
 # sh -c "$_VIM +PlugInstall +qall"
 sh -c "$_VIM -c 'PlugInstall | qall'"
