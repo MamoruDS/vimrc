@@ -2,6 +2,11 @@
 
 _CUSTOM="$HOME/.config/nvim/custom"
 
+conf="coc_extensions"
+if [ ! -f "${_CUSTOM}/${conf}.vim" ]; then
+    curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/custom/$conf.vim > $_CUSTOM/$conf.vim
+fi
+
 conf="color"
 curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/custom/$conf.vim > $_CUSTOM/$conf.vim
 conf="cmds"
