@@ -9,8 +9,21 @@ function! Reload()
     source ~/.config/nvim/init.vim
 endfunc
 
+function! _Format()
+    if &filetype == 'python'
+        if &modified
+            echo 'save buffer before formatting (aborted)'
+        else
+            exec '!black -l 55 ' . expand('%:p')
+        endif
+    else
+        call CocAction('format')
+    endif
+endfunction
+
 " coc
-com! -nargs=0 Format :CocCommand prettier.formatFile
+" com! -nargs=0 Format :call CocAction('format')
+com! -nargs=0 Format :call _Format()
 
 " nerdtree
 function! ToggleNERDTree()
