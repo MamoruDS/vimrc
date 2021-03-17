@@ -1,5 +1,6 @@
 set tabstop=4 shiftwidth=4 expandtab
 
+set autoread
 set updatetime=250
 set cursorline
 set background=dark
