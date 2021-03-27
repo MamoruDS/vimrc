@@ -21,6 +21,7 @@ let g:cc_GY=241 " gray
 let g:cc_OR=209 " orange
 
 let g:cs__B='bold'
+let g:cs__I='italic'
 let g:cs__N='None'
 
 let g:cs_GN=g:cs__N " default
@@ -75,7 +76,7 @@ exe 'hi Include			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs
 exe 'hi Macro			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_YL . ' cterm=' . g:cs__B
 exe 'hi PreCondit		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
 exe 'hi Type			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL . ' cterm=' . g:cs_GN
-exe 'hi StorageClass	ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi StorageClass	ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
 exe 'hi Structure		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:cs_GN
 exe 'hi Typedef			ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
 exe 'hi Special			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
