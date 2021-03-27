@@ -23,6 +23,8 @@ confs=(
     "plugconf_gitgutter"
     "plugconf_nerdtree"
     "syn_json"
+    "syn_py3"
+    "syn_rust"
     "syn_typescript"
     "syn_vim"
 )
