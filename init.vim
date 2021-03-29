@@ -27,6 +27,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'neoclide/jsonc.vim'
 " https://github.com/cespare/vim-toml
 Plug 'cespare/vim-toml'
+" https://github.com/numirias/semshi
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 call plug#end()
 
 for f in split(glob('~/.config/nvim/custom/*.vim'), '\n')
