@@ -19,6 +19,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " https://github.com/preservim/nerdtree
 Plug 'preservim/nerdtree'
+" https://github.com/preservim/nerdcommenter
+Plug 'preservim/nerdcommenter'
 " https://github.com/gabrielelana/vim-markdown
 Plug 'gabrielelana/vim-markdown'
 " https://github.com/Xuyuanp/nerdtree-git-plugin
