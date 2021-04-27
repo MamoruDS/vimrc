@@ -61,7 +61,7 @@ exe 'hi String			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GN . ' cterm=' . g:cs_
 exe 'hi Character		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GN . ' cterm=' . g:cs_GN
 exe 'hi Number			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBRD . ' cterm=' . g:cs_GN
 exe 'hi Boolean			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR . ' cterm=' . g:cs_GN
-exe 'hi Float			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:cs_GN
+exe 'hi Float			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBRD . ' cterm=' . g:cs_GN
 exe 'hi Identifier		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
 exe 'hi Function		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL . ' cterm=' . g:cs_GN
 exe 'hi Statement		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_YL . ' cterm=' . g:cs_GN
