@@ -5,6 +5,7 @@ exe 'hi vimCommand		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_YL
 exe 'hi vimVar			ctermbg=' . g:ccBBK . ' ctermfg=' . g:cc_WT
 " vimOption: builtin-options
 exe 'hi vimOption		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT . ' cterm=underline'
+exe 'hi shStatement		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL
 
 exe 'hi vimHiGroup		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT . ' cterm=underline'
 
@@ -15,3 +16,9 @@ exe 'hi vimHiCtermFgBg	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
 " vim[]Attrib: ctermbg={}
 exe 'hi vimHiAttrib		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR . ' cterm=bold'
 exe 'hi vimFgBgAttrib	ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_OR . ' cterm=bold'
+
+" variable
+exe 'hi shVariable		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT . ' cterm=italic'
+exe 'hi shDerefSimple	ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBYL
+
+exe 'hi shCtrlSeq		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT
