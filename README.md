@@ -52,3 +52,12 @@ curl -sL https://raw.githubusercontent.com/MamoruDS/vimrc/main/update.sh | bash
 ```
 
 </details>
+
+install `neovim` in python provider _(optional)_
+
+```shell
+/your/python -m pip install neovim
+
+nvim -c "checkhealth"
+nvim -c "UpdateRemotePlugins" # for numirias/semshi
+```
