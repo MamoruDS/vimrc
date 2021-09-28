@@ -22,6 +22,7 @@ confs=(
     "plugconf_coc"
     "plugconf_gitgutter"
     "plugconf_nerdtree"
+    "plugconf_nerdcommenter"
     "syn_json"
     "syn_py3"
     "syn_rust"
