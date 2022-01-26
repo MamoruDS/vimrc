@@ -5,9 +5,11 @@ node
 yarn # or npm
 ```
 
-## installation
+## Installation
 
-install nodejs and npm first
+### install nodejs
+
+install nodejs by using [nvm](https://github.com/nvm-sh/nvm) or command
 
 ```shell
 curl -sL install-node.now.sh/lts | bash
@@ -15,6 +17,10 @@ curl -sL install-node.now.sh/lts | bash
 # sudo alternative
 curl -sL install-node.now.sh/lts | sudo -E bash -
 ```
+
+### install neovim
+
+[official guide](https://github.com/neovim/neovim/wiki/Installing-Neovim)
 
 <details><summary>Arch</summary>
 
