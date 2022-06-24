@@ -31,6 +31,8 @@ Plug 'neoclide/jsonc.vim'
 Plug 'cespare/vim-toml'
 " https://github.com/numirias/semshi
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+" https://github.com/ojroques/vim-oscyank
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 call plug#end()
 
 for f in split(glob('~/.config/nvim/custom/*.vim'), '\n')
