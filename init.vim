@@ -1,11 +1,14 @@
 set tabstop=4 shiftwidth=4 expandtab
 
 set autoread
-set updatetime=250
-set cursorline
 set background=dark
-
+set cursorline
 set encoding=UTF-8
+set mouse=a
+set updatetime=250
+
+set ignorecase
+set smartcase
 
 let &t_Co=256
 let base16colorspace=256
@@ -30,7 +33,7 @@ Plug 'neoclide/jsonc.vim'
 " https://github.com/cespare/vim-toml
 Plug 'cespare/vim-toml'
 " https://github.com/numirias/semshi
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " https://github.com/ojroques/vim-oscyank
 Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 call plug#end()
