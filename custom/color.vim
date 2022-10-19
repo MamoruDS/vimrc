@@ -51,7 +51,7 @@ set number
 hi LineNr		ctermbg=None	ctermfg=240
 hi Normal		ctermbg=None
 hi ModeMsg		ctermbg=green	ctermfg=238
-hi MatchParen	ctermbg=05		ctermfg=231 
+hi MatchParen	ctermbg=05		ctermfg=231
 hi CursorLine	ctermbg=233     ctermfg=None    cterm=None
 hi CursorLineNr	ctermbg=None	ctermfg=250
 
@@ -74,7 +74,7 @@ exe 'hi Exception		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:c
 exe 'hi PreProc			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
 exe 'hi Include			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
 exe 'hi Macro			ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_YL . ' cterm=' . g:cs__B
-exe 'hi PreCondit		ctermbg=' . g:ccUNK . ' ctermfg=' . g:cc_WT . ' cterm=' . g:cs_GN
+exe 'hi PreCondit		ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs__B
 exe 'hi Type			ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBBL . ' cterm=' . g:cs_GN
 exe 'hi StorageClass	ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBM_ . ' cterm=' . g:cs_GN
 exe 'hi Structure		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_RD . ' cterm=' . g:cs_GN
