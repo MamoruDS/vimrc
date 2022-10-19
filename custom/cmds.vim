@@ -22,7 +22,6 @@ function! _Format()
 endfunction
 
 " coc
-" com! -nargs=0 Format :call CocAction('format')
 com! -nargs=0 Format :call _Format()
 
 " nerdtree
@@ -35,4 +34,4 @@ function! ReloadColorNERDTreeGIT()
     exe 'source ~/.config/nvim/custom/plugconf_nerdtree.vim'
 endfunction
 
-nnoremap <C-b> :call ToggleNERDTree()<CR>
+"  nnoremap <C-b> :call ToggleNERDTree()<CR>

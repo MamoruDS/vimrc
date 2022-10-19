@@ -7,3 +7,5 @@ exe 'hi! link rustEscape rustString'
 exe 'hi rustDerive		ctermbg=' . g:cc__N . ' ctermfg=' . g:cc_GY . ' cterm=' . g:cs__I
 " exe 'hi! link rustAttribute SignColumn'
 exe 'hi rustAttribute	ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBCY . ' cterm=' . g:cs__I
+" not working
+exe 'hi rustFoldBraces  ctermbg=' . g:cc__N . ' ctermfg=' . g:ccBCY
