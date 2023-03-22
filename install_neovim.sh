@@ -1,3 +1,8 @@
+if ! [ $(uname -s) = 'Linux' ]; then
+  echo 'Error: This script only supports Linux' >&2
+  exit 1
+fi
+
 if ! [ $(uname -m) = 'x86_64' ]; then
   echo 'Error: This script only supports x86_64' >&2
   exit 1
