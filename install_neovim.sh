@@ -1,3 +1,8 @@
+if ! [ $(uname -m) = 'x86_64' ]; then
+  echo 'Error: This script only supports x86_64' >&2
+  exit 1
+fi
+
 if ! [ -x "$(command -v curl)" ]; then
   echo 'Error: curl is not installed' >&2
   exit 1
